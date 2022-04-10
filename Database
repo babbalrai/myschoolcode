@@ -1,0 +1,17 @@
+import java.sql.*;
+class Main{
+	public static void main(String[] args) throws Exception{
+		Connection con=null;
+		try{
+			Class.forName("com.mysql.jdbc.Driver");
+			con=DriverManager.getConnection("jdbc:mysql://localhost/","root","");
+			System.out.println("Xampp mysql connnected..");
+			Statement stat = con.createStatement();
+			stat.executeUpdate("CREATE DATABASE PROGRAMS");
+			System.out.println("database created..");
+		}catch(Exception e)
+		{
+			System.out.println(e.getMessage());
+		}
+	}
+}
