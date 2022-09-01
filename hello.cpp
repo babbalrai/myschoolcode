@@ -58,6 +58,7 @@ catch (...){
 	cin>>s;
 	try{
 	int j=binarySearch(a,n,s);
+	cout<<s;
 //	if(!int j){
 //		throw j;
 //	}
