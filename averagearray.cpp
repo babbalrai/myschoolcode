@@ -23,7 +23,9 @@ int main()
         sum += arr[i];
     }
     average = sum / n;
-    cout << "Average = " << average;
+    cout << "Average = " << average<<end;
+    cout<<"sum of array is"<<sum;
+
 
     return 0;
 }
